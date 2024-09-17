@@ -1,0 +1,653 @@
+body {
+    margin: 0 auto;
+    max-width: 100%;
+    height: 100%;
+    background-color: #0d0d0d;
+}
+
+header {
+    max-width: 100%;
+    width: 100%;
+    height: 59.99px;
+    margin: 0 auto;
+    background-color: #0d0d0d;
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+    position: fixed;
+    z-index: 11;
+}
+
+@font-face {
+    font-family: 'YouTubeSansM';
+    src: url('../FONTS/youtube-sans-medium.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'YouTubeSansL';
+    src: url('../FONTS/youtube-sans-light.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'YouTubeSansB';
+    src: url('../FONTS/youtube-sans-bold.ttf') format('truetype');
+}
+
+
+/* -------------- SCROLLBAR -------------- */
+
+/* AMPLADA */
+::-webkit-scrollbar {
+    width: 6px;
+} 
+
+/* COLOR DE FONS */
+::-webkit-scrollbar-track {
+    background: #121212;
+}  
+
+/* COLOR DE BARRA I BORDES */
+::-webkit-scrollbar-thumb {
+    background: #AAAAAA;
+    border-radius: 20px;
+}  
+
+/* COLOR DE BARRA AL PASSAR PER SOBRE */
+::-webkit-scrollbar-thumb:hover {
+    background: #636363; 
+}
+
+
+/* -------------- HEADER -------------- */
+
+/* FOTO LOGO YT I ICONO MENÚ */
+
+.fotomenudiv {
+    max-width: 100%;
+    width: 90%;
+    height: auto;
+    position: absolute;
+    margin-left: 0%;
+    display: flex;
+}
+
+.fotomenu {
+    margin-left: 0px;
+}
+
+.svgmenu {
+    width: 30px;
+    height: 20px;
+    fill: white;
+    margin-top: 10px;
+    margin-left: 19px;
+    margin-right: 20px;
+
+}
+
+/* FOTO LOGO ESQUERRA A DALT */
+
+.headerdreta {
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    margin-left: 93%;
+    display: flex;
+}
+
+/* BARRA DE CERCA */
+
+.cerca {
+    max-width: 100%;
+    width: 34%;
+    display: flex;
+    position: absolute;
+    margin-left: 33%;
+    border: none;
+}
+
+.cerca input {
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    background-color: #0e0e0e;
+    width: 100%;
+    color: white;
+    padding: 5px;
+    border: 1px;
+    border-style: ridge;
+    border-color: rgb(67, 67, 67);
+    font-weight: bold;
+}
+
+.lupa {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: #1e1e1e;
+    fill: white;
+    border: 1px;
+    border-style: ridge;
+    border-color: rgb(67, 67, 67);
+}
+
+.lupa:hover {
+    background-color: rgb(77, 77, 77)
+}
+
+.lupa:active{
+    background-color: rgb(119, 119, 119)
+}
+
+.svglupa{
+    fill: rgb(255, 255, 255);
+    width: 33px;
+    height: 24px;
+    padding: 4px 8px;
+    margin-left: 3px;
+}
+
+.svgmicro {
+    fill: rgb(255, 255, 255);
+    margin: 2%;
+    width: 30px;
+    height: 25px;
+    margin-top: 3px;
+}
+
+.micro {
+    border-radius: 20px;
+    background-color: #252525;
+    border-style: none;
+    margin-left: 15px;
+}
+
+.micro:hover {
+    background-color: rgb(77, 77, 77)
+}
+
+.micro:active {
+    background-color: rgb(119, 119, 119)
+}
+
+
+/* -------------- DIV ESQUERRA -------------- */
+
+
+.DIV_ESQUERRA {
+    position: absolute;
+    left: 2%;
+    top: 80px;
+    width: 67.5%;
+    height: 100%;
+    z-index: 10;
+    border-radius: 13px;
+}
+
+.DIV_VIDEO {
+    top: 80px;
+    width: 100%;
+    height: 75.3%;
+    border-radius: 13px;
+}
+
+.video{
+    width: 100%;
+    height: 100%;
+    border-radius: 13px;
+}
+
+.DIV_TITOL {
+    color: white;
+    font-size: 21px;
+    font-family: 'YouTubeSansM';
+}
+
+.TITOL {
+    padding-top: 10px;
+}
+
+/* DIV CANAL, FOTO, LIKES i DISLIKES */
+
+.DIV_CANAL_BUTONS {
+    display: flex;
+}
+
+    .FOTOCANAL {
+        width: 55%;
+        border-radius: 100%;
+        margin-top: 5px;
+        margin-right: 15px;
+    }
+
+    .esquerra {
+        width: 100%;
+        height: auto;
+        margin-left: -20px;
+        display: flex;
+    }
+
+            .TITOLVIDEOS {
+                color: white;
+                margin-top: 10px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+    .buto_sub {
+        width: 100%;
+        height: auto;
+        margin-left: 80px;
+    }
+
+        .sub {
+            background-color: white;
+            color: black;
+            border-radius: 25px;
+            border-style: none;
+            max-width: 100%;
+            width: auto;
+            height: 38px;
+            padding: 0px 20px;
+            margin-left: 6px;
+            margin-top: 8px;
+            font-family: "YouTubeSansM";
+            font-size: 15px;
+        }
+
+            .sub:hover {
+                background-color: rgb(236, 236, 236);
+            }
+
+            .sub:active {
+                background-color: rgb(226, 226, 226);
+            }
+
+    .butons_altres {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: right;
+    }
+
+        .buto_like {
+            background-color: #333333;
+            color: white;
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+            border-style: none;
+            max-width: 100%;
+            width: auto;
+            height: 38px;
+            padding: 0px 15px;
+            margin-left: 6px;
+            margin-top: 8px;
+            display: flex;
+            align-items: center;
+            font-size: 15px;
+        }
+
+            .buto_like:hover {
+                background-color: #4b4b4b;
+            }
+            
+            .buto_like:active {
+                background-color: #5f5f5f;
+            }
+
+        .LIKE_SVG {
+            width: 25px;
+            fill: white;
+            margin-top: 2px;
+        }
+
+        .buto_dislike {
+            background-color: #333333;
+            color: white;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+            border-style: none;
+            max-width: 100%;
+            width: auto;
+            height: 38px;
+            padding: 0px 15px;
+            margin-left: 0.9px;
+            margin-top: 8px;
+        }
+
+            .buto_dislike:hover {
+                background-color: #4b4b4b;
+            }
+
+            .buto_dislike:active {
+                background-color: #5f5f5f;
+            }
+
+        .DISLIKE_SVG {
+            width: 25px;
+            fill: white;
+            margin-top: 3px;
+        }
+
+        .butons_compartiex_desa{
+            background-color: #333333;
+            color: white;
+            border-radius: 25px;
+            border-style: none;
+            max-width: 100%;
+            width: auto;
+            height: 38px;
+            padding: 0px 20px;
+            margin-left: 6px;
+            margin-top: 8px;
+            font-size: 15px;
+            display: flex;
+            align-items: center;
+        }
+            
+            .butons_compartiex_desa:hover {
+                background-color: #4b4b4b;
+            }
+            
+            .butons_compartiex_desa:active {
+                background-color: #5f5f5f;
+            }
+
+        .COMPARTEIX_SVG {
+            width: 25px;
+            fill: white;
+            margin-top: 3px;
+        }
+
+        .DESA_SVG {
+            width: 25px;
+            fill: white;
+            margin-top: 3px;
+        }
+
+        .butons_compartiex_desa_puntets{
+            background-color: #333333;
+            color: white;
+            border-radius: 25px;
+            border-style: none;
+            max-width: 100%;
+            width: auto;
+            height: 38px;
+            padding: 0px 12px;
+            margin-left: 6px;
+            margin-top: 8px;
+            font-size: 19px;
+        }
+
+            .butons_compartiex_desa_puntets:hover {
+                background-color: #4b4b4b;
+            }
+            
+            .butons_compartiex_desa_puntets:active {
+                background-color: #5f5f5f;
+            }
+
+    .subs_CONTEXTE {
+        font-size: 12px;
+        color: rgb(152, 152, 152);
+        margin-top: -20px;
+        margin-left: 4.5%;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+
+/* --- DIV DESCRIPCIÓ I ELS 3 BLOCS --- */
+
+/* DIV QUE ENCAPSULA ELS 3 BLOCS */
+.ENCAPSULAT {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* DIV DESCIPCIÓ */
+.DIV_DESCRIP {
+    background-color: #2a2a2a;
+    width: 98.6%;
+    height: auto;
+    color: white;
+    padding: 9px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+    .descrip {
+        margin: -0.1px;
+        color: white;
+        font-size: 14px;
+        font-family: Arial, Helvetica, sans-serif;
+
+    }
+
+
+/* DIV NOM DEL JOC */
+
+.foto_joc {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    width: 100%;
+    height: 100%;
+
+}
+
+.DIV_NOMJOC {
+    width: 41%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #2a2a2a;
+    padding: 15px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-left: -7px;
+}
+
+    .titol_joc {
+        color: white;
+        font-size: 18px;
+        line-height: 30px;
+        font-family: "YouTubeSansL";
+    }
+
+    .any_joc {
+        color: rgb(135, 135, 135);
+        font-size: 12px;
+        line-height: 25px;
+        font-family: Arial, Helvetica, sans-serif;
+
+    }
+
+    .extra_joc {
+        color: rgb(135, 135, 135);
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 25px;
+        font-family: Arial, Helvetica, sans-serif;
+
+    }
+
+
+/* DIV CLASSIFICACIÓ VIDEO */
+.DIV_TIPUSVIDEO {
+    width: 48%;
+    height: auto;
+    display: flex;
+    background-color: #2a2a2a;
+    padding: 9px;
+    border-radius: 10px;
+}
+
+.div_kabesa {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+    .foto_classific {
+        width: auto;
+        height: 60px;
+        border-radius: 100px;
+        margin: 20px;
+    }
+
+
+
+/* DIV COMENTARIS */
+
+
+.COMENTARIS {
+    width: 30%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;    
+}
+
+.intro_comentaris {
+    color: white;
+    font-family: 'YouTubeSansB';
+    font-size: 24px;
+    
+}
+
+.intro_comentaris_2 {
+    color: white;
+    font-family: 'YouTubeSansM';
+    padding-top: 5px;
+
+}
+
+.svgcom {
+    fill: white;
+    width: 8%;
+    height: auto;
+    margin-left: 90px;
+}
+
+/* -------------- DIV DRETA -------------- */
+
+
+.DIV_DRETA {
+    position: absolute;
+    width: 22.5%;
+    height: 100%;
+    left: 73.5%;
+    top: 80px;
+    z-index: 10;
+    border-radius: 13px;
+}
+
+.BUTONS {
+    color: null;
+    display: block;
+    width: 100%;
+    height: auto;
+    font-size: 8px;
+}
+
+    .b_tots {
+        background-color: white;
+        color: black;
+        border-radius: 8px;
+        border-style: none;
+        max-width: 100%;
+        width: auto;
+        height: 30px;
+        padding: 8px 10px;
+        margin-right: 3px;
+    }
+
+        .b_tots:hover {
+            background-color: rgb(230, 230, 230);
+        }
+
+        .b_tots:active {
+            background-color: rgb(205, 205, 205);
+        }
+
+    .b_altres{
+        background-color: #333333;
+        color: white;
+        border-radius: 8px;
+        border-style: none;
+        max-width: 100%;
+        width: auto;
+        padding: 8px 10px;
+        margin-right: 3px;
+    }
+
+        .b_altres:hover {
+            background-color: #424242;
+        }
+
+        .b_altres:active {
+            background-color: #505050;
+        }
+
+
+.DIV_VIDEOS_1 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 12%;
+    padding-top: 15px;
+}
+
+.DIV_VIDEOS {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 12%;
+    margin-top: -15px;
+}
+
+.DADES_MINI {
+    width: 56%;
+    height: auto;
+    margin-top: -10px;
+}
+
+    .MINIATURA_MINI_DIV {
+        width: 39%;
+        height: auto;
+    }
+
+    .MINIATURA_MINI_FOTO {
+        border-radius: 8px;
+    }
+
+    .TITOL_MINI {
+        color: white;
+        font-size: 14px;
+        width: 90%;
+        height: 20%;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .CANAL_MINI {
+        color: grey;
+        font-size: 12px;
+        width: 59%;
+        height: 20%;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top: -10px;
+
+    }
+
+    .EXTRA_MINI {
+        color: grey;
+        font-size: 12px;
+        width: 100%;
+        height: 20%;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top: -15px;
+    }
+
+    @media (max-width: 480px) {
+        .b_tots, .b_altres {
+            width: 100%;
+            font-size: 12px;
+        }
+    }

@@ -1,0 +1,450 @@
+body {
+    margin: 0 auto;
+    max-width: 100%;
+    height: 100%;
+    background-color: #0d0d0d;
+}
+
+header {
+    max-width: 100%;
+    width: 100%;
+    height: 59.99px;
+    margin: 0 auto;
+    background-color: #0d0d0d;
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+    position: fixed;
+    z-index: 11;
+}
+
+@media (max-width: 1000px){
+
+}
+
+/* -------------- SCROLLBAR -------------- */
+
+/* Estils per la barra lateral en pantalles petites */
+@media (max-width: 768px) {
+    .MENUESQ {
+        display: none; /* Amaga la barra lateral */
+    }
+}
+
+/* Estils per la barra lateral en pantalles mitjanes a grans */
+@media (min-width: 769px) {
+    .MENUESQ {
+        position: fixed;
+        top: 75.99px;
+        background-color: #0d0d0d;
+        overflow-y: auto;
+        width: 13%;
+        height: 100vh; /* Assegura que ocupa tota l'alçada de la pantalla */
+        z-index: 10; /* Manté la barra lateral per sobre d'altres elements */
+    }
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+} 
+
+/* COLOR DE FONS */
+::-webkit-scrollbar-track {
+    background: #121212;
+}  
+
+/* COLOR DE BARRA I BORDES */
+::-webkit-scrollbar-thumb {
+    background: #AAAAAA;
+    border-radius: 20px;
+}  
+
+/* COLOR DE BARRA I BORDES */
+::-webkit-scrollbar-thumb {
+    background: #AAAAAA;
+    border-radius: 20px;
+}  
+
+/* COLOR DE BARRA AL PASSAR PER SOBRE */
+::-webkit-scrollbar-thumb:hover {
+    background: #636363; 
+}
+
+
+/* MENU ESQ BARRA */
+
+.MENUESQ::-webkit-scrollbar {
+    width: 6px;
+} 
+
+/* COLOR DE FONS */
+.MENUESQ::-webkit-scrollbar-track {
+    background: #0d0d0d;
+}  
+
+/* COLOR DE BARRA I BORDES */
+.MENUESQ::-webkit-scrollbar-thumb {
+    background: #AAAAAA;
+    border-radius: 20px;
+}  
+
+/* COLOR DE BARRA I BORDES */
+.MENUESQ::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    background: transparent;
+} 
+
+/* COLOR DE BARRA AL PASSAR PER SOBRE */
+.MENUESQ::-webkit-scrollbar-thumb:hover {
+    background: #AAAAAA;
+} 
+
+
+/* -------------- HEADER -------------- */
+
+/* FOTO LOGO YT I ICONO MENÚ */
+
+.svgmenu {
+    width: 30px;
+    height: 20px;
+    fill: white;
+    margin-top: 10px;
+    margin-left: 19px;
+    margin-right: 20px;
+}
+
+.fotomenudiv {
+    max-width: 100%;
+    width: 90%;
+    height: auto;
+    position: absolute;
+    margin-left: 0%;
+    display: flex;
+}
+
+.fotomenu {
+    margin-left: 0px;
+}
+
+
+
+/* FOTO LOGO ESQUERRA A DALT */
+
+.headerdreta {
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    margin-left: 93%;
+    display: flex;
+}
+
+/* BARRA DE CERCA */
+
+.cerca {
+    max-width: 100%;
+    width: 34%;
+    display: flex;
+    position: absolute;
+    margin-left: 33%;
+    border: none;
+}
+
+.cerca input {
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    background-color: #0e0e0e;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    padding: 5px;
+    border: 1px;
+    border-style: ridge;
+    border-color: rgb(67, 67, 67);
+    font-weight: bold;
+}
+
+.lupa {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: #1e1e1e;
+    fill: white;
+    border: 1px;
+    border-style: ridge;
+    border-color: rgb(67, 67, 67);
+}
+
+.lupa:hover {
+    background-color: rgb(77, 77, 77)
+}
+
+.lupa:active{
+    background-color: rgb(119, 119, 119)
+}
+
+.svglupa{
+    fill: rgb(255, 255, 255);
+    width: 33px;
+    height: 24px;
+    padding: 4px 8px;
+    margin-left: 3px;
+}
+
+.svgmicro {
+    fill: rgb(255, 255, 255);
+    margin: 2%;
+    width: 30px;
+    height: 25px;
+    margin-top: 3px;
+}
+
+.micro {
+    border-radius: 20px;
+    background-color: #252525;
+    border: 1px;
+    border-style: none;
+    border-color: rgb(67, 67, 67);
+    margin-left: 15px;
+}
+
+.micro:hover {
+    background-color: rgb(77, 77, 77)
+}
+
+.micro:active {
+    background-color: rgb(119, 119, 119)
+}
+
+/* BUTONS DE DALT */
+
+.butonsdalt{
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 60px;
+    background:#0d0d0d;
+    padding: 5px;
+    left: 235px;
+}
+
+.butotot {
+    background-color: white;
+    color: black;
+    border-radius: 8px;
+    border-style: none;
+    max-width: 100%;
+    width: auto;
+    height: 30px;
+    padding: 8px 10px;
+    font-size: 14px;
+    margin-left: 6px;
+}
+
+.buto{
+    background-color: #333333;
+    color: white;
+    border-radius: 8px;
+    border-style: none;
+    max-width: 100%;
+    width: auto;
+    height: 30px;
+    margin: 5px;
+    padding: 8px 10px;
+    font-size: 14px;
+}
+
+.buto:hover{
+    background-color: #3c3c3c;
+}
+
+.buto:active{
+    background-color: #4d4c4c;
+}
+
+
+/* -------------- LLISTA ESQUERRA -------------- */
+
+
+.MENUESQ {
+    position: fixed;
+    top: 70px;
+    background-color: #0d0d0d;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: 15%;
+    height: 100%;
+}
+
+ul {
+    list-style-type: none;
+    margin: -10px;
+    margin-left: 10px;
+    padding: 0;
+    width: 100%;
+    background-color: #121212;
+    font-size: 17px;
+    font-family: Roboto, sans-serif;
+}
+
+li a {
+    display: block;
+    color: #ffffff;
+    padding: 9px 16px;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+li a:hover {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.icon {
+    margin-right: 20px;
+    width: 20px;
+}
+
+p {
+    margin: 10px;
+    color: white;
+}
+
+.TextInferior {
+    font-size: 12px !important ;
+    color: rgb(165, 165, 165);
+    font-weight: bolder;
+}
+
+.Copy {
+    font-size: 11px !important;
+    color: grey;
+    margin-bottom: 100px;
+}
+
+hr {
+    border: none;
+    border-top: 2px solid rgb(100, 100, 100);
+}
+
+
+/* -------------- ZONA DE VIDEOS -------------- */
+
+
+.CAIXAVIDEOS {
+    position: relative; /* Canviat de absolute a relative */
+    margin: 0 auto;
+    top: 100px;
+    left: 80px;
+    width: 100%;
+    max-width: 1200px; /* Màxima amplada */
+}
+
+
+/* FILERA DE VIDEOS NORMALS */
+
+.FILA {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Espai entre vídeos */
+}
+
+.VIDEO {
+    flex: 1 1 calc(25% - 20px); /* Ajustament dinàmic */
+    box-sizing: border-box;
+}
+
+.MINIATURA {
+    width: 100%;
+    height: auto; /* Mantenir aspecte original */
+    border-radius: 10px;
+}
+
+.TEXTVIDEOS {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.dreta {
+    margin-right: -30px;
+    margin-top: 10px;
+}
+
+.FOTOCANAL {
+    width: 55%;
+    border-radius: 50%;
+}
+
+.TITOLVIDEOS {
+    font-weight: bold;
+}
+
+.CONTEXTE {
+    font-size: 14px;
+    color: rgb(152, 152, 152);
+}
+
+.detalls {
+    display: flex;
+}
+
+.esquerra {
+    margin-left: 10px; /* Ajustament per al marge */
+}
+
+/* Títol Shorts */
+.noseque {
+    display: flex;
+    align-items: center;
+    margin: 20px 0; /* Marges superiors i inferiors */
+}
+
+.div_logoshorts {
+    margin-right: 10px; /* Margen a la dreta */
+}
+
+.logoshorts {
+    width: 24px; /* Amplada ajustada */
+    height: auto; /* Mantenir aspecte original */
+}
+
+.titolalgo {
+    font-weight: bold;
+    font-size: 22px; /* Font de mida ajustada */
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+/* FILERA DE VIDEOS SHORTS */
+.SHORTS {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px; /* Espai entre shorts */
+}
+
+.SHORTVID {
+    flex: 1 1 calc(20% - 15px); /* Ajustament dinàmic amb espai */
+    box-sizing: border-box; /* Incloure el padding i el marge dins de l'amplada */
+    border-radius: 10px; /* Arrodoniment de les cantonades */
+    overflow: hidden; /* Ocultar desbordament */
+}
+
+.MINIATURA_SHORT {
+    width: 100%;
+    height: auto; /* Ajustar automàticament la mida */
+    border-radius: 10px; /* Arrodonir les cantonades */
+}
+
+.SHORTTEXT {
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px; /* Afegir espai interior */
+}
+
+.TITOLVIDEOS {
+    font-weight: bold;
+    font-size: 14px; /* Mida de la font ajustada */
+}
+
+.CONTEXTE {
+    font-size: 12px; /* Mida de la font ajustada */
+    color: rgb(152, 152, 152);
+}
